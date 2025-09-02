@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+span {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    padding: 0 40px;
+    background-color: #1c1612;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .logo img {
+    width: 38px;
+    height: 38px;
+}
+
+.navbar .burger {
+    display: none;
+}
+
+.navbar .logo h3 {
+
+    font-size: 22px;
+}
+
+.navbar .logo h3 a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.navbar .menu .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navbar .menu .nav-links a {
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width:900px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .burger {
+        display: block;
+    }
+
+    .navbar .burger div {
+        background-color: white;
+        height: 3px;
+        width: 25px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Hero Section */
+
+.hero {
+    height: 90vh;
+    background-image: url(Assests/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+
+}
+
+.hero .content {
+    width: 605px;
+    height: 265px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.hero .content h3 {
+    color: #A19B99;
+    font-size: 30px;
+}
+
+.hero .content h1 {
+    color: white;
+    font-size: 50px;
+}
+
+@media(max-width:700px) {
+    .hero {
+        background-position: right;
+        justify-content: center;
+        padding-right: 0px;
+        padding: 0px 20px;
+    }
+
+    .hero .content h3 {
+        font-size: 20px;
+    }
+
+    .hero .content h1 {
+        line-height: 50px;
+        font-size: 40px;
+
+    }
+
+    .hero .content {
+        width: 405px;
+        height: 265px;
+        padding: 0px 20px;
+        gap: 20px
+    }
+}
