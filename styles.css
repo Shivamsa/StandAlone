@@ -128,7 +128,7 @@ li {
 
 @media(max-width:700px) {
     .hero {
-        background-position: right;
+        background-position: left;
         justify-content: center;
         padding-right: 0px;
         padding: 0px 20px;
@@ -150,4 +150,106 @@ li {
         padding: 0px 20px;
         gap: 20px
     }
+}
+
+/* About Section */
+
+.about{
+    background-color: #23242B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+    gap:100px
+}
+
+.about h2{
+    font-size: 40px;
+    color:#8e8e8e;  
+}
+
+.about .about-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 180px;
+}
+
+.about .about-container .about-card{
+    width: 300px;
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px
+}
+
+.about .about-container .about-card h3{
+    font-size: 14px;
+    color:white;
+    font-weight: 400;
+}
+
+.about .about-container .about-card p{
+    color: #717A87;
+    font-size: 12px;
+    text-align: center;
+}
+.about .about-container .about-card img{
+    width: 120px;
+    height: 120px;
+}
+
+@media(max-width:600px){
+    .about{
+        padding:100px 0;
+        gap:50px ;
+    }
+}
+
+
+
+/* Services section */
+.services{
+    background-color: #1F212A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+    gap: 100px;
+}
+
+.services h2{
+    font-size: 50px;
+    color:#8e8e8e;
+}
+
+.services .services-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.services .services-container .services-card{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.services .services-container .services-card img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px #1d1e25;
+}
+ 
+.services .services-container .services-card h3{
+    color: white;
 }
